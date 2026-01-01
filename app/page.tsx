@@ -459,12 +459,12 @@ export default function Home() {
               💎 EXCLUSIVE OFFER - LIMITED TIME ONLY! 💎
             </div>
 
-            {slug && (
+            {short && (
               <div className="result-box">
                 <h3>✓ Your Disguised Link (Ready to Troll):</h3>
                 <input
                   type="text"
-                  value={slug}
+                  value={short}
                   readOnly
                   onClick={(e) => e.currentTarget.select()}
                 />
@@ -473,8 +473,8 @@ export default function Home() {
                 </p>
                 <button
                   onClick={() => {
-                    navigator.clipboard.writeText(slug);
-                    alert("Copied to clipboard!");
+                    navigator.clipboard.writeText(short);
+                    alert("✓ Copied to clipboard!");
                   }}
                   style={{ width: "100%" }}
                 >
