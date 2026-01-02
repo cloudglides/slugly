@@ -145,19 +145,15 @@ export default function Home() {
         >
           SLUGLY.COM
         </h1>
-        <p style={{ fontSize: "12px", color: "#555", marginBottom: "15px" }}>
-          <font face="Verdana">
-            The Fastest Way to Shorten Links on the Web
-          </font>
+        <p style={{ fontSize: "12px", color: "#555", marginBottom: "15px", fontFamily: "Verdana" }}>
+          The Fastest Way to Shorten Links on the Web
         </p>
       </center>
 
       <div className="form-box">
-        <p style={{ fontSize: "11px", marginBottom: "8px" }}>
-          <font face="Verdana">
-            Enter the full URL below including http:// and we will instantly
-            create a shorter version:
-          </font>
+        <p style={{ fontSize: "11px", marginBottom: "8px", fontFamily: "Verdana" }}>
+          Enter the full URL below including http:// and we will instantly
+          create a shorter version:
         </p>
         <form onSubmit={handleGenerate}>
           <label

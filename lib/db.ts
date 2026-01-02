@@ -22,4 +22,7 @@ export function getDb() {
 
 export { schema };
 
-export default pool;
+export function getPool() {
+  if (!pool) initPool();
+  return pool;
+}
