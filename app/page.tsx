@@ -100,17 +100,13 @@ export default function Home() {
           <hr />
 
           <div className="nav-row">
-            <a href="#">Home</a> |
-            <a href="#">About</a> |
-            <a href="#">Advertise</a> |
-            <a href="#">Shareware</a> |
-            <a href="#">Search</a> |
-            <a href="#">E-mail</a>
+            <a href="#">Home</a> |<a href="#">About</a> |
+            <a href="#">Advertise</a> |<a href="#">Shareware</a> |
+            <a href="#">Search</a> |<a href="#">E-mail</a>
           </div>
 
           <div className="nav-row">
-            <a href="#">Startup/Usability</a> |
-            <a href="#">Connectivity</a> |
+            <a href="#">Startup/Usability</a> |<a href="#">Connectivity</a> |
             <a href="#">Internet Hyper-Glossary</a> |
             <a href="#">Shareware CD-ROM</a>
           </div>
@@ -144,11 +140,15 @@ export default function Home() {
         This URL is for troll purpose. Sussy URLs ahead.
       </div>
       <center>
-        <h1 style={{ fontSize: "42px", color: "#000080", margin: "15px 0 5px 0" }}>
+        <h1
+          style={{ fontSize: "42px", color: "#000080", margin: "15px 0 5px 0" }}
+        >
           SLUGLY.COM
         </h1>
         <p style={{ fontSize: "12px", color: "#555", marginBottom: "15px" }}>
-          <font face="Verdana">The Fastest Way to Shorten Links on the Web</font>
+          <font face="Verdana">
+            The Fastest Way to Shorten Links on the Web
+          </font>
         </p>
       </center>
 
@@ -160,7 +160,13 @@ export default function Home() {
           </font>
         </p>
         <form onSubmit={handleGenerate}>
-          <label style={{ display: "block", marginBottom: "5px", fontWeight: "bold" }}>
+          <label
+            style={{
+              display: "block",
+              marginBottom: "5px",
+              fontWeight: "bold",
+            }}
+          >
             URL to Shorten:
           </label>
           <input
@@ -179,11 +185,7 @@ export default function Home() {
         </form>
       </div>
 
-      {error && (
-        <div className="error-box">
-          ERROR: {error}
-        </div>
-      )}
+      {error && <div className="error-box">ERROR: {error}</div>}
 
       {short && (
         <div className="result-box">
@@ -242,8 +244,7 @@ export default function Home() {
           <br />
           <br />
           <a href="mailto:webmaster@slugly.com">Webmaster</a> |
-          <a href="#">Privacy Policy</a> |
-          <a href="#">Terms</a>
+          <a href="#">Privacy Policy</a> |<a href="#">Terms</a>
           <br />
           <br />
           <span style={{ fontSize: "8px", color: "#777" }}>
